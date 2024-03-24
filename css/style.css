@@ -110,6 +110,7 @@
     flex-wrap: wrap; /* wrap so that cards are on different rows */
     align-items: center;
     justify-content: center; /* center cards */
+    gap: 20px;
   }
 
   /* Individual Cards */
@@ -235,20 +236,20 @@
       background-color: #f1f1f1;
     }
     body > header{
-      display: flex;
-      flex-direction: row;
+      display: flex; 
+      flex-direction: column; /* make logo and nav-links be a column */ 
     }
     .nav_links {
-      flex-direction: row;
-      justify-content: space-between;
+      flex-direction: row; 
+      justify-content: space-between; /* space nav-links far apart */
     }
     .pricing{
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      align-items: flex-end;
+      align-items: flex-end; /* align items at end */
       justify-content: center;
-      gap: 20px;
+      gap: 10px;
     }
 
     .card {
@@ -261,11 +262,11 @@
       display: none;
     }
 
-    /* footer {
-      margin-top: 150px;
-    } */
-
-    .card > ul li:nth-child(2)::after {
-      content: "\1F44D";
+    footer {
+      margin-top: 10rem; /* Move the footer to next page like in the screenshot */
+    }
+    /* Thumbs Up Emoji */
+    .card > ul li:nth-child(2)::after { 
+      content: "\1F44D"; /* For every 2nd li element, display a thumbs up emoji */
     }
   }
